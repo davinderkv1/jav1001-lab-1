@@ -19,11 +19,11 @@ fun main()
         var targetUnit = readLine()
         println(targetUnit)
         var result : Double = 0.0
-        currentUnit = currentUnit!!.lowercase()
+        currentUnit = currentUnit!!.lowercase() //changed the case of units entered by user to use in when 
         targetUnit = targetUnit!!.lowercase()
         when(currentUnit)
             {
-                "mi" -> when(targetUnit)
+                "mi" -> when(targetUnit)        //To convert value given value from mile to other units
                     {
                         "km" -> result = value * 1.60934
                          "cm" -> result = value * 160934
