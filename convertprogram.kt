@@ -1,6 +1,5 @@
 /*Convert.kt
  Write a small Kotlin command line application (Convert.kt) that allows a user to convert between different forms of measurement. The program should:
-
 1. Collect a numeric value from the user and store it in an appropriate variable
 2. Collect the current unit of measurement.
 3. Determine the appropriate conversion (in either direction, i.e., the user can enter km or mi)
@@ -11,13 +10,10 @@ fun main()
         println("******Program to Convert units******\n\n\n")
         print("Enter the value to be converted: ")
         var value = readLine()!!.toDouble()
-        println(value)
         print("Enter the Current unit: ")
         var currentUnit = readLine()
-        println(currentUnit)
         print("Enter the unit to which you want to convert value: ")
         var targetUnit = readLine()
-        println(targetUnit)
         var result : Double = 0.0
         currentUnit = currentUnit!!.lowercase() //changed the case of units entered by user to use in when 
         targetUnit = targetUnit!!.lowercase()
